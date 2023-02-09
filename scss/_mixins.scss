@@ -1,0 +1,21 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin tileimg {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+}
+
+@mixin tilespan {
+    font-size: size(small);
+    padding: 8px;
+}
+
+@mixin layer1card {
+    box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+}

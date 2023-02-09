@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contain {
+  margin: 15%;
+}
+
+.sidebar {
+  width: 16%;
+}
+
+.heading {
+  font-size: 14px;
+  margin: 15% 3%;
+}
+.heading span {
+  position: absolute;
+  left: 5%;
+  top: 6%;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#first-tile {
+  background-color: #fff;
+}
+#first-tile .tile-img {
+  background-color: #CB0C9F;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#first-tile span {
+  color: #141414;
+  font-weight: 600;
+}
+
+.tile {
+  display: flex;
+  padding: 4%;
+  border-radius: 8px;
+  margin: 4.5% 0;
+}
+.tile span {
+  font-size: 14px;
+  padding: 8px 12px;
+  color: #67748E;
+}
+
+.tile-img {
+  background-color: #fff;
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.07);
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-pages {
+  margin: 7% 4% 2%;
+  color: #67748E;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.main-content {
+  margin: 1.5% 2% 2%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slash {
+  color: #252F40;
+  font-size: 14px;
+  font-family: "Open Sans";
+  padding-bottom: 5px;
+}
+.slash span {
+  font-weight: 300;
+}
+.slash .second {
+  font-weight: 500;
+}
+
+.head-dash {
+  color: #252F40;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.credentials {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 12px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 12px;
+  align-items: center;
+}
+.icons img {
+  height: 14px;
+  width: 14px;
+}
+.icons span {
+  font-size: 14px;
+  color: #67748E;
+  font-weight: 600;
+}
+
+.search {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  height: 40px;
+  border-radius: 8px;
+  padding-left: 5px;
+  margin-top: 5px;
+  border: 1px solid #D2D6DA;
+}
+.search input {
+  height: 100%;
+  border: none;
+  padding-left: 8px;
+  border-radius: 8px;
+}
+.search input::-moz-placeholder {
+  color: #252F40;
+  font-weight: 300;
+  opacity: 0.5;
+}
+.search input::placeholder {
+  color: #252F40;
+  font-weight: 300;
+  opacity: 0.5;
+}
+.search img {
+  padding-left: 5px;
+}
+
+.content {
+  margin: 2% 0;
+}
+
+.widgets {
+  display: grid;
+  margin: 2% 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+
+.widget {
+  box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 15px 25px;
+}
+.widget h5 {
+  font-size: 14px;
+  color: #67748E;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.widget-price {
+  font-size: 20px;
+  color: #252F40;
+  font-weight: 700;
+}
+
+.widget-percentage {
+  font-size: 14px;
+  color: #82D616;
+  font-weight: 700;
+  padding-left: 5px;
+}
+
+#loss {
+  color: #EA0606;
+}
+
+.widget-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #FF0080 0%, #7928CA 100%);
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  height: 48px;
+  width: 48px;
+}
+
+.layer1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+}
+
+.rocket-card {
+  box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  background-color: yellow;
+  height: 400px;
+}
+
+.image-card {
+  box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  background-color: red;
+  height: 400px;
+}
+
+body {
+  background-color: #F8F9FA;
+  font-family: "Open Sans";
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.main-content {
+  width: 84%;
+}/*# sourceMappingURL=main.css.map */

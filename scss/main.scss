@@ -1,0 +1,20 @@
+@import './variables';
+@import './resets';
+@import './functions';
+@import './sidebar';
+@import './main-content';
+
+body {
+    background-color: $primary-color;
+    font-family: $font-family;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.main-content {
+    width: 84%;
+}
+
