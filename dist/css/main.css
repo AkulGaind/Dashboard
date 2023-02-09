@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -74,10 +75,6 @@
   color: #67748E;
   font-weight: 700;
   font-size: 14px;
-}
-
-.main-content {
-  margin: 1.5% 2% 2%;
 }
 
 .navbar {
@@ -156,6 +153,10 @@
   padding-left: 5px;
 }
 
+.main-content {
+  margin: 1.5% 2% 2%;
+}
+
 .content {
   margin: 2% 0;
 }
@@ -214,21 +215,97 @@
 .layer1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 15px;
+  gap: 50px;
 }
 
 .rocket-card {
   box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
   border-radius: 16px;
-  background-color: yellow;
-  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px 25px;
+}
+
+.rocket-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.upper-text h4 {
+  font-size: 16px;
+  color: #67748E;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.upper-text h3 {
+  font-size: 20px;
+  color: #252F40;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+.upper-text p {
+  font-size: 16px;
+  color: #67748E;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.lower-text {
+  color: #67748E;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rocket-img {
+  background: linear-gradient(135deg, #FF0080 0%, #7928CA 100%);
+  padding: 30px 5px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-card {
   box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
   border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  background: url("../../dist/images/background.png");
+  background-repeat: no-repeat;
+}
+
+.layer2 {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 50%;
+  margin: 2% 0;
+  gap: 50px;
+}
+
+.layer2-card1 {
+  box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
   background-color: red;
   height: 400px;
+}
+
+.layer2-card2 {
+  box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
 }
 
 body {

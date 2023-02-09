@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -136,16 +137,37 @@
                     </div>
                 </div>
                 <div class="layer1">
-                    <div class="rocket-card"></div>
-                    <div class="image-card"></div>
+                    <div class="rocket-card">
+                        <div class="rocket-text">
+                            <div class="upper-text">
+                            <h4>Built by developers</h4>
+                            <h3>Soft UI Dashboard</h3>
+                            <p>From colors, cards, typography to complex elements, </p>
+                            <p>you will find the full documentation.</p>
+                            </div>
+                            <div class="lower-text">Read More <img src="images/arrow-right.png" alt=""></div>
+                        </div>
+                        <div class="rocket-img">
+                            <img src="images/rocket-white.png" alt="">
+                        </div>
+                    </div>
+                    <div class="image-card">
+                        <div class="background" style="color: white;">Hello</div>
+                    </div>
                 </div>
-                <div class="layer2"></div>
+                <div class="layer2">
+                    <div class="layer2-card1">
+                    </div>
+                    <div class="layer2-card2">
+                        <canvas class="line-chart flex" id="line-chart"></canvas>
+                    </div>
+                </div>
                 <div class="layer3"></div>
             </div>
         </div>
         </div>
     </div>
-
+<script src="index.js"></script>
 </body>
 
 </html>

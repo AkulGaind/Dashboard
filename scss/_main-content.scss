@@ -1,99 +1,16 @@
 @import './variables';
 @import './mixins';
+@import './navbar';
 
 
 .main-content {
     margin: 1.5% 2% 2%;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-}
-
-.slash {
-    color: $text-color;
-    font-size: size(small);
-    font-family: $font-family;
-    padding-bottom: 5px;
-
-    span {
-        font-weight: weight(thin);
-    }
-
-    .second {
-        font-weight: weight(medium);
-    }
-}
-
-.head-dash {
-    color: $text-color;
-    font-weight: weight(vbold);
-    font-size: size(medium);
-}
-
-.credentials {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 12px;
-}
-
-.icons {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 12px;
-    align-items: center;
-
-    img {
-        height: 14px;
-        width: 14px;
-    }
-
-    span {
-        font-size: 14px;
-        color: #67748E;
-        font-weight: weight(bold);
-    }
-}
-
-.search {
-    display: flex;
-    background-color: $white;
-    align-items: center;
-    height: 40px;
-    border-radius: 8px;
-    padding-left: 5px;
-    margin-top: 5px;
-    border: 1px solid #D2D6DA;
-
-
-    input {
-        height: 100%;
-        border: none;
-        padding-left: 8px;
-        border-radius: 8px;
-    }
-
-    input::placeholder {
-        color: $text-color;
-        font-weight: weight(thin);
-        opacity: 0.5;
-    }
-
-    img {
-        padding-left: 5px;
-    }
-}
-
-
-
 
 .content {
     margin: 2% 0;
 }
-
-
-
 
 .widgets {
     display: grid;
@@ -112,7 +29,7 @@
 
     h5 {
         font-size: size(small);
-        color: #67748E;
+        color: $small-text-color;
         font-weight: weight(bold);
         padding-bottom: 5px;
     }
@@ -137,7 +54,7 @@
 
 .widget-img {
     @include flexCenter;
-    background: linear-gradient(135deg, #FF0080 0%, #7928CA 100%);
+    background: $linear-gradient1;
     box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.07);
     border-radius: 8px;
     height: 48px;
@@ -149,17 +66,85 @@
 .layer1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 15px;
+    gap: 50px;
 }
 
 .rocket-card {
     @include layer1card;
-    background-color: yellow;
-    height: 400px;
+    background-color: $white;
+    padding: 20px 25px;
 }
+
+.rocket-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.upper-text {
+    h4 {
+        font-size: size(medium);
+        color: $small-text-color;
+        font-weight: weight(bold);
+        padding-bottom: 5px;
+    }
+    h3 {
+        font-size: size(large);
+        color: $text-color;
+        font-weight: weight(vbold);
+        padding-bottom: 8px;
+    }
+    p {
+        font-size: size(medium);
+        color: $small-text-color;
+        font-weight: weight(regular);
+        line-height: 30px;
+    }
+}
+
+.lower-text {
+    color: $small-text-color;
+    font-size: size(small);
+    font-weight: weight(bold);
+}
+
+.rocket-img {
+    background: $linear-gradient1;
+    padding: 30px 5px;
+    border-radius: 16px;
+    @include flexCenter;
+}
+
 
 .image-card {
     @include layer1card;
+    background-color: $white;
+    padding: 15px;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    background: url('../../dist/images/background.png');
+    background-repeat: no-repeat;
+}
+
+
+.layer2 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 50%;
+    margin: 2% 0;
+    gap: 50px;
+}
+
+.layer2-card1 {
+    @include layer1card;
     background-color: red;
     height: 400px;
+}
+
+.layer2-card2 {
+    @include layer1card;
+    background-color: $white;
 }
