@@ -5,6 +5,7 @@ $white: #fff;
 $text-color: #252F40;
 $small-text-color: #67748E;
 $linear-gradient1: linear-gradient(135deg, #FF0080 0%, #7928CA 100%);
+$cards-gap: 50px;
 $font-family: 'Open Sans';
 $font-weights: (
     "thin": 300,
@@ -14,7 +15,9 @@ $font-weights: (
     "vbold": 700
 );
 $font-size: (
+    "vsmall": 12px,
     "small": 14px,
     "medium": 16px,
-    "large": 20px
+    "large": 20px,
+    "vlarge": 24px
 );

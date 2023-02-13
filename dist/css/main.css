@@ -165,16 +165,15 @@
   display: grid;
   margin: 2% 5px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  gap: 50px;
 }
 
 .widget {
   box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
   border-radius: 16px;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
   padding: 15px 25px;
 }
 .widget h5 {
@@ -221,9 +220,9 @@
 .rocket-card {
   box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
   border-radius: 16px;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
   padding: 20px 25px;
 }
 
@@ -267,26 +266,44 @@
   align-items: center;
 }
 
-.image-card {
-  box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
-  border-radius: 16px;
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-  padding: 15px;
-}
-
 .background {
   height: 100%;
   width: 100%;
   background: url("../../dist/images/background.png");
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 12px 16px;
+}
+
+.image-card {
+  box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 38px;
+  color: #fff;
+}
+.image-card h2 {
+  font-size: 20px;
+  padding-bottom: 12px;
+  font-weight: 600;
+}
+.image-card span {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+}
+.image-card .lower-text {
+  color: white;
+  font-weight: 400;
 }
 
 .layer2 {
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 50%;
+  grid-template-columns: 0.25fr 1.75fr;
   margin: 2% 0;
   gap: 50px;
 }
@@ -294,18 +311,165 @@
 .layer2-card1 {
   box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
   border-radius: 16px;
+  background-color: #fff;
+  padding: 20px 25px;
+}
+
+.users {
   display: flex;
   justify-content: space-between;
-  background-color: red;
-  height: 400px;
+  padding-top: 20px;
+}
+
+.graph1-content {
+  padding-top: 25px;
+}
+.graph1-content h3 {
+  color: #252F40;
+  font-size: 16px;
+}
+.graph1-content #bracket {
+  color: #67748E;
+}
+.graph1-content span {
+  font-weight: 600;
+  font-size: 14px;
+}
+.graph1-content #remain {
+  color: #252F40;
+  font-weight: 400;
+}
+
+.flex {
+  display: flex;
+}
+
+.icon span {
+  font-size: 14px;
+  color: #67748E;
+}
+.icon h1 {
+  font-size: 24px;
+}
+
+.black-bar progress::-webkit-progress-bar {
+  background-color: #E9ECEF;
+}
+
+.black-bar progress::-webkit-progress-value {
+  background: black;
+  border-radius: 1.5px;
+}
+
+.graph1 {
+  background: linear-gradient(135deg, #3A416F 0%, #141727 100%);
+  border-radius: 12px;
+  padding: 15px;
 }
 
 .layer2-card2 {
   box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
   border-radius: 16px;
-  display: flex;
-  justify-content: space-between;
   background-color: #fff;
+  padding: 20px 25px;
+}
+
+.graph2-heading {
+  padding: 5px 0 55px;
+}
+.graph2-heading h3 {
+  font-size: 16px;
+  color: #252F40;
+}
+.graph2-heading span {
+  color: #67748E;
+  font-size: 14px;
+}
+
+.layer3 {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 50px;
+}
+
+.layer3-card1 {
+  box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  background-color: #fff;
+}
+.layer3-card1 h3 {
+  font-size: 16px;
+  color: #252F40;
+}
+.layer3-card1 span {
+  font-size: 14px;
+  color: #67748E;
+  font-weight: 400;
+}
+.layer3-card1 #percent {
+  color: #17C1E8;
+}
+
+.layer3-card1-heading {
+  padding: 20px 25px;
+}
+
+.layer3-card2 {
+  box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+table {
+  width: 100%;
+  padding: 30px 0 10px;
+}
+
+th {
+  font-size: 14px;
+  color: #8392AB;
+  border-bottom: 1px solid #F5F5F5;
+  text-align: left;
+}
+
+td {
+  font-size: 14px;
+  color: #252F40;
+  font-weight: 600;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+progress {
+  -webkit-appearance: none;
+  height: 3px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #E9ECEF;
+  border-radius: 1.5px;
+}
+
+progress::-webkit-progress-value {
+  background: linear-gradient(135deg, #21D4FD 0%, #2152FF 100%);
+  border-radius: 1.5px;
+}
+
+.completed progress::-webkit-progress-value {
+  background: #52C41A;
+}
+
+.cancel progress::-webkit-progress-value {
+  background: #F5222D;
+}
+
+.layer3-card2 {
+  padding: 15px 25px;
+}
+.layer3-card2 h3 {
+  font-size: 16px;
+}
+.layer3-card2 span {
+  font-size: 14px;
 }
 
 body {

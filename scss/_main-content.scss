@@ -16,15 +16,12 @@
     display: grid;
     margin: 2% 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 50px;
+    gap: $cards-gap;
 }
 
 .widget {
-    box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
-    border-radius: 16px;
-    display: flex;
-    justify-content: space-between;
-    background-color: $white;
+    @include cardstyle;
+    @include layer1card;
     padding: 15px 25px;
 
     h5 {
@@ -66,12 +63,12 @@
 .layer1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 50px;
+    gap: $cards-gap;
 }
 
 .rocket-card {
+    @include cardstyle;
     @include layer1card;
-    background-color: $white;
     padding: 20px 25px;
 }
 
@@ -116,35 +113,216 @@
 }
 
 
-.image-card {
-    @include layer1card;
-    background-color: $white;
-    padding: 15px;
-}
-
 .background {
     height: 100%;
     width: 100%;
     background: url('../../dist/images/background.png');
     background-repeat: no-repeat;
+    @include layer1card;
+    flex-direction: column;
+    padding: 12px 16px;
+}
+
+.image-card {
+    @include cardstyle;
+    @include layer1card;
+    padding: 32px 38px;
+    color: $white;
+    
+    h2 {
+        font-size: size(large);
+        padding-bottom: 12px;
+        font-weight: weight(bold);
+    }
+    span {
+        font-size: size(medium);
+        font-weight: weight(thin);
+        line-height: 26px;
+    }
+
+    .lower-text {
+        color: white;
+        font-weight: weight(regular);
+    }
+
 }
 
 
 .layer2 {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 50%;
+    grid-template-columns: 0.25fr 1.75fr;
     margin: 2% 0;
-    gap: 50px;
+    gap: $cards-gap;
 }
 
 .layer2-card1 {
+    @include cardstyle;
+    padding: 20px 25px;
+}
+
+.users {
     @include layer1card;
-    background-color: red;
-    height: 400px;
+    padding-top: 20px;
+}
+
+.graph1-content {
+    padding-top: 25px;
+    h3 {
+        color: $text-color;
+        font-size: size(medium);
+    }
+
+    #bracket {
+        color: $small-text-color;
+    }
+
+    span {
+        font-weight: weight(bold);
+        font-size: size(small);
+    }
+
+    #remain {
+        color: $text-color;
+        font-weight: weight(regular);
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.icon {
+
+    span {
+        font-size: size(small);
+        color: $small-text-color;
+    }
+
+
+    h1 {
+        font-size: size(vlarge);
+    }
+}
+
+.black-bar progress::-webkit-progress-bar {
+    background-color: #E9ECEF;
+}
+
+.black-bar progress::-webkit-progress-value {
+    background: black;
+    border-radius: 1.5px;
+}
+
+
+
+.graph1 {
+    background: linear-gradient(135deg, #3A416F 0%, #141727 100%);
+    border-radius: 12px;
+    padding: 15px;
 }
 
 .layer2-card2 {
-    @include layer1card;
-    background-color: $white;
+    @include cardstyle;
+    padding: 20px 25px;
 }
+
+.graph2-heading {
+    padding: 5px 0 55px;
+    h3 {
+        font-size: size(medium);
+        color: $text-color;
+    }
+
+    span {
+        color: $small-text-color;
+        font-size: size(small);
+    }
+}
+
+.layer3 { 
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 50px;
+}
+
+.layer3-card1 {
+    @include cardstyle;
+
+    h3 {
+        font-size: size(medium);
+        color: $text-color;
+    }
+
+    span {
+        font-size: size(small);
+        color: $small-text-color;
+        font-weight: weight(regular);
+    }
+
+    #percent {
+        color: #17C1E8;
+    }
+}
+
+.layer3-card1-heading {
+    padding: 20px 25px;
+}
+
+
+.layer3-card2 {
+    @include cardstyle;
+}
+
+table {
+    width: 100%;
+    padding: 30px 0 10px;
+}
+
+th {
+    font-size: size(small);
+    color: #8392AB;
+    border-bottom: 1px solid #F5F5F5;
+    text-align: left;
+}
+
+td {
+    font-size: size(small);
+    color: $text-color;
+    font-weight: weight(bold);
+    border-bottom: 1px solid #F5F5F5;
+}
+
+
+progress {
+    -webkit-appearance: none;
+    height: 3px;
+}
+progress::-webkit-progress-bar {
+    background-color: #E9ECEF;
+    border-radius: 1.5px;
+}
+progress::-webkit-progress-value {
+    background: linear-gradient(135deg, #21D4FD 0%, #2152FF 100%);
+    border-radius: 1.5px;
+}
+
+.completed progress::-webkit-progress-value {
+    background: #52C41A;
+}
+
+.cancel progress::-webkit-progress-value {
+    background: #F5222D;
+}
+
+.layer3-card2 {
+    padding: 15px 25px;
+
+    h3 {
+        font-size: size(medium);
+    }
+
+    span {
+        font-size: size(small);
+    }
+}
+
