@@ -9,14 +9,12 @@
 
 
 .content {
-    margin: 2% 0;
+    margin: 2% 5px;
 }
 
 .widgets {
-    display: grid;
-    margin: 2% 5px;
+    @include layerstyle;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: $cards-gap;
 }
 
 .widget {
@@ -42,7 +40,7 @@
     font-size: size(small);
     color: #82D616;
     font-weight: weight(vbold);
-    padding-left: 5px;
+    padding-left: 2px;
 }
 
 #loss {
@@ -61,9 +59,8 @@
 
 
 .layer1 {
-    display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: $cards-gap;
+    @include layerstyle;
 }
 
 .rocket-card {
@@ -149,10 +146,8 @@
 
 
 .layer2 {
-    display: grid;
-    grid-template-columns: 0.25fr 1.75fr;
-    margin: 2% 0;
-    gap: $cards-gap;
+    grid-template-columns: 40% auto;
+    @include layerstyle;
 }
 
 .layer2-card1 {
@@ -162,11 +157,11 @@
 
 .users {
     @include layer1card;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .graph1-content {
-    padding-top: 25px;
+    padding-top: 40px;
     h3 {
         color: $text-color;
         font-size: size(medium);
@@ -192,6 +187,9 @@
 }
 
 .icon {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 
     span {
         font-size: size(small);
@@ -202,15 +200,28 @@
     h1 {
         font-size: size(vlarge);
     }
+
+    .black-bar {
+        width: 80%;
+        
+        progress {
+            width: 80%;
+        }
+    }
+}
+
+.black-bar progress {
+    height: 4px;
 }
 
 .black-bar progress::-webkit-progress-bar {
     background-color: #E9ECEF;
+
 }
 
 .black-bar progress::-webkit-progress-value {
     background: black;
-    border-radius: 1.5px;
+    border-radius: 5px;
 }
 
 
@@ -219,6 +230,7 @@
     background: linear-gradient(135deg, #3A416F 0%, #141727 100%);
     border-radius: 12px;
     padding: 15px;
+    height: 55%
 }
 
 .layer2-card2 {
@@ -234,15 +246,27 @@
     }
 
     span {
-        color: $small-text-color;
         font-size: size(small);
     }
 }
 
+.graph2 {
+    height: 75%;
+}
+
+.per {
+    color: $small-text-color;
+    font-weight: weight(bold);
+}
+
+.year {
+    color: $text-color;
+    font-weight: weight(regular);
+}
+
 .layer3 { 
-    display: grid;
-    grid-template-columns: 1.25fr 0.75fr;
-    gap: 50px;
+    grid-template-columns: 70% auto;
+    @include layerstyle;
 }
 
 .layer3-card1 {
@@ -251,12 +275,13 @@
     h3 {
         font-size: size(medium);
         color: $text-color;
+        padding-bottom: 10px;
     }
 
     span {
         font-size: size(small);
         color: $small-text-color;
-        font-weight: weight(regular);
+        font-weight: weight(bold);
     }
 
     #percent {
@@ -265,24 +290,25 @@
 }
 
 .layer3-card1-heading {
-    padding: 20px 25px;
+    padding: 25px;
 }
 
-
-.layer3-card2 {
-    @include cardstyle;
-}
 
 table {
     width: 100%;
-    padding: 30px 0 10px;
+    padding-bottom: 30px;
+}
+
+tbody {
+    padding: 10px;
 }
 
 th {
     font-size: size(small);
     color: #8392AB;
     border-bottom: 1px solid #F5F5F5;
-    text-align: left;
+    padding: 20px;
+    text-align: center;
 }
 
 td {
@@ -290,6 +316,15 @@ td {
     color: $text-color;
     font-weight: weight(bold);
     border-bottom: 1px solid #F5F5F5;
+    padding: 5px 20px;
+}
+
+tr:hover {
+    background-color: #F8F9FA;
+}
+
+#companies {
+    text-align: left;
 }
 
 
@@ -314,11 +349,59 @@ progress::-webkit-progress-value {
     background: #F5222D;
 }
 
+.companies {
+    display: flex;
+    align-items: center;
+
+    span {
+        color: $text-color;
+        padding: 15px;
+        font-weight: weight(bold);
+    }
+}
+
+.budget {
+    color: #8392AB;
+    font-size: size(vsmall);
+    padding: 5px 55px;
+    text-align: center;
+}
+
+.members {
+    padding: 5px 55px;
+    text-align: center;
+}
+
+.completion {
+    color: $small-text-color;
+    font-size: size(small);
+    font-weight: weight(regular);
+    padding: 5px 5px 5px 55px;
+
+    p {
+        margin-top: -10px;
+    }
+}
+
+#last {
+    border-bottom: 0;
+}
+
+.uni {
+    color: $text-color;
+    font-weight: weight(medium);
+}
+
 .layer3-card2 {
-    padding: 15px 25px;
+    @include cardstyle;
+    padding: 30px;
+    z-index: -2;
+    position: relative;
 
     h3 {
         font-size: size(medium);
+        color: $text-color;
+        // padding-bottom: 8px;
     }
 
     span {
@@ -326,3 +409,102 @@ progress::-webkit-progress-value {
     }
 }
 
+.label {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding-top: 8px;
+}
+
+
+.history {
+    position: relative;
+    padding-top: 14px;
+
+    .line {
+        position: absolute;
+        height: 97%;
+        width: 2px;
+        background: #F5F5F5 ;
+        left: 7px;
+        top: 40px;
+        z-index: -1;
+    }
+}
+
+.order {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 24px;
+
+    img {
+        height: 15px;
+        width: 15px;
+        margin: 4px 0;
+    }
+
+    .order-details {
+        padding-left: 18px;
+
+        .order-number {
+            color: $text-color;
+            font-size: size(small);
+            font-weight: weight(bold);
+        }
+
+        .time {
+            color: $small-text-color;
+            font-size: size(vsmall);
+            padding: 4px 0;
+        }
+    }
+}
+
+.settings {
+    border-radius: 24px;
+    background-color: $white;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.07);
+    position: absolute;
+    bottom: -20px;
+    right: 25px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+    color: $small-text-color;
+    font-size: size(small);
+
+    .left-footer {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        margin-left: -1%;
+    
+        .bold {
+            color: $text-color;
+            font-weight: weight(vbold);
+        }
+    }
+    
+    .right-footer {
+        padding-right: 20px;
+        a{
+            text-decoration: none;
+            padding: 0 10px 0 30px;
+            color: $small-text-color !important;
+        }
+    
+        a:visited {
+            text-decoration: none;
+        }
+    }
+}

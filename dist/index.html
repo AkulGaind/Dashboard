@@ -6,67 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <link rel="icon" href="images/logo-ct.jpg">
+    <title>Soft UI Dashboard</title>
 </head>
 
 <body>
     <div class="container">
         <div class="sidebar">
             <div class="contain">
-            <div class="heading">
-                <img src="images/logo-ct.jpg" alt="">
-                <span>Soft UI Dashboard</span>
-            </div>
-            <div class="tile" id="first-tile">
-                <div class="tile-img">
-                <img src="images/shop.png" alt="">
+                <div class="heading">
+                    <a href="">
+                        <img src="images/logo-ct.jpg" alt="">
+                        <span>Soft UI Dashboard</span>
+                    </a>
                 </div>
-                <span>Dashboard</span>
-            </div>
-            <div class="tile">
-                <div class="tile-img">
-                <img src="images/tables.png" alt="">
+                <div class="tile" id="first-tile">
+                    <div class="tile-img">
+                        <img src="images/shop.png" alt="">
+                    </div>
+                    <span>Dashboard</span>
                 </div>
-                <span>Tables</span>
-            </div>
-            <div class="tile">
-                <div class="tile-img">
-                <img src="images/billing.png" alt="">
+                <div class="tile">
+                    <div class="tile-img">
+                        <img src="images/tables.png" alt="">
+                    </div>
+                    <span>Tables</span>
                 </div>
-                <span>Billing</span>
-            </div>
-            <div class="tile">
-                <div class="tile-img">
-                <img src="images/rtl.png" alt="">
+                <div class="tile">
+                    <div class="tile-img">
+                        <img src="images/billing.png" alt="">
+                    </div>
+                    <span>Billing</span>
                 </div>
-                <span>RTL</span>
-            </div>
-            <div class="account-pages">
-                <span>Account Pages</span>
-            </div>
-            <div class="tile">
-                <div class="tile-img">
-                <img src="images/profile.png" alt="">
+                <div class="tile">
+                    <div class="tile-img">
+                        <img src="images/rtl.png" alt="">
+                    </div>
+                    <span>RTL</span>
                 </div>
-                <span>Profile</span>
-            </div>
-            <div class="tile">
-                <div class="tile-img">
-                <img src="images/signin.png" alt="">
+                <div class="account-pages">
+                    <span>Account Pages</span>
                 </div>
-                <span>Sign In</span>
-            </div>
-            <div class="tile">
-                <div class="tile-img">
-                <img src="images/signup.png" alt="">
+                <div class="tile">
+                    <div class="tile-img">
+                        <img src="images/profile.png" alt="">
+                    </div>
+                    <span>Profile</span>
                 </div>
-                <span>Sign Up</span>
+                <div class="tile">
+                    <div class="tile-img">
+                        <img src="images/signin.png" alt="">
+                    </div>
+                    <span>Sign In</span>
+                </div>
+                <div class="tile">
+                    <div class="tile-img">
+                        <img src="images/signup.png" alt="">
+                    </div>
+                    <span>Sign Up</span>
+                </div>
             </div>
-        </div>
+            <div class="contain2">
+                <div class="box">
+                    <div class="diamond tile-img">
+                        <img src="images/diamond.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h4>Need help?</h4>
+                        <h5>Please check our docs</h5>
+                    </div>
+                    <button>DOCUMENTATION</button>
+                </div>
+            </div>
         </div>
         <div class="main-content">
             <div class="navbar">
@@ -81,208 +97,314 @@
                 </div>
                 <div class="credentials">
                     <div class="icons">
-                        <img src="images/bell.png" alt="">
+                        <div class="notification">
+                            <img src="images/bell.png" alt="">
+                            <img src="images/notification.png" onclick="outHover()" alt="" class="notify">
+                        </div>
                         <img src="images/settings.png" alt="">
-                        <span>Sign In</span>
-                        <img src="images/account.png" alt="">
+                        <a href="">
+                            <img src="images/account.png" alt="">
+                            <span>Sign In</span>
+                        </a>
                     </div>
                     <div class="search">
-                        <img src="images/search.png" alt="">
+                        <button>
+                            <img src="images/search.png" alt="">
+                        </button>
                         <input type="text" name="" id="" placeholder="Type here...">
                     </div>
                 </div>
             </div>
             <div class="content">
-            <div class="card">
-                <div class="widgets">
-                    <div class="widget">
-                        <div class="widget-content">
-                            <h5>Today's Money</h5>
-                            <span class="widget-price">$53,000</span>
-                            <span class="widget-percentage">+55%</span>
-                        </div>
-                        <div class="widget-img">
-                            <img src="images/money-coins.png" alt="">
-                        </div>
-                    </div>
-                    <div class="widget">
-                        <div class="widget-content">
-                            <h5>Today's Users</h5>
-                            <span class="widget-price">2,300</span>
-                            <span class="widget-percentage">+20%</span>
-                        </div>
-                        <div class="widget-img">
-                            <img src="images/world.png" alt="">
-                        </div>
-                    </div>
-                    <div class="widget">
-                        <div class="widget-content">
-                            <h5>New Clients</h5>
-                            <span class="widget-price">+3,462</span>
-                            <span class="widget-percentage" id="loss">-2%</span>
-                        </div>
-                        <div class="widget-img">
-                            <img src="images/paper-diploma.png" alt="">
-                        </div>
-                    </div>
-                    <div class="widget">
-                        <div class="widget-content">
-                            <h5>Sales</h5>
-                            <span class="widget-price">$103,430</span>
-                            <span class="widget-percentage">+5%</span>
-                        </div>
-                        <div class="widget-img">
-                            <img src="images/cart.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="layer1">
-                    <div class="rocket-card">
-                        <div class="rocket-text">
-                            <div class="upper-text">
-                            <h4>Built by developers</h4>
-                            <h3>Soft UI Dashboard</h3>
-                            <p>From colors, cards, typography to complex elements, </p>
-                            <p>you will find the full documentation.</p>
+                <div class="card">
+                    <div class="widgets">
+                        <div class="widget">
+                            <div class="widget-content">
+                                <h5>Today's Money</h5>
+                                <span class="widget-price">$53,000</span>
+                                <span class="widget-percentage">+55%</span>
                             </div>
-                            <div class="lower-text">Read More <img src="images/arrow-right.png" alt=""></div>
-                        </div>
-                        <div class="rocket-img">
-                            <img src="images/rocket-white.png" alt="">
-                        </div>
-                    </div>
-                    <div class="image-card">
-                        <div class="background">
-                            <div class="upper">
-                                <h2>Work with the rockets</h2>
-                                <span>Wealth creations is an evolutionarily recent positive-sum game. It is all about who take the opportunity first.</span>
+                            <div class="widget-img">
+                                <img src="images/money-coins.png" alt="">
                             </div>
-                            <div class="lower-text">Read More <img src="images/arrow-right-white.png" alt=""></div>
                         </div>
-                    </div>
-                </div>
-                <div class="layer2">
-                    <div class="layer2-card1">
-                        <div class="graph1">
-                            <canvas class="bar-chart" id="bar-chart"></canvas>
+                        <div class="widget">
+                            <div class="widget-content">
+                                <h5>Today's Users</h5>
+                                <span class="widget-price">2,300</span>
+                                <span class="widget-percentage">+20%</span>
+                            </div>
+                            <div class="widget-img">
+                                <img src="images/world.png" alt="">
+                            </div>
                         </div>
-                        <div class="graph1-content">
-                            <h3>Active Users</h3>
-                            <span id="bracket">(+23%) </span>
-                            <span id="remain">than last week</span>
-                            <div class="users">
-                                <div class="icon">
-                                    <div class="flex">
-                                    <img src="images/icon1.png" alt="">
-                                    <span>Users</span>
-                                    </div>
-                                    <h1>3,6K</h1>
-                                    <p class="black-bar"><progress max="100" min="10" value="50"></progress></p>
-                                </div>
-                                <div class="icon">
-                                    <div class="flex">
-                                    <img src="images/icon2.png" alt="">
-                                    <span>Clicks</span>
-                                    </div>
-                                    <h1>2m</h1>
-                                    <p class="black-bar"><progress max="100" min="10" value="30"></progress></p>
-                                </div>
-                                <div class="icon">
-                                    <div class="flex">
-                                    <img src="images/icon3.png" alt="">
-                                    <span>Sales</span>
-                                    </div>
-                                    <h1>$772</h1>
-                                    <p class="black-bar"><progress max="100" min="10" value="30"></progress></p>
-                                </div>
-                                <div class="icon">
-                                    <div class="flex">
-                                    <img src="images/icon4.png" alt="">
-                                    <span>Items</span>
-                                    </div>
-                                    <h1>82</h1>
-                                    <p class="black-bar"><progress  max="100" min="10" value="20"></progress></p>
-                                </div>
+                        <div class="widget">
+                            <div class="widget-content">
+                                <h5>New Clients</h5>
+                                <span class="widget-price">+3,462</span>
+                                <span class="widget-percentage" id="loss">-2%</span>
+                            </div>
+                            <div class="widget-img">
+                                <img src="images/paper-diploma.png" alt="">
+                            </div>
+                        </div>
+                        <div class="widget">
+                            <div class="widget-content">
+                                <h5>Sales</h5>
+                                <span class="widget-price">$103,430</span>
+                                <span class="widget-percentage">+5%</span>
+                            </div>
+                            <div class="widget-img">
+                                <img src="images/cart.png" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="layer2-card2">
-                        <div class="graph2-heading">
-                            <h3>Sales Overview</h3>
-                            <img src="images/arrow-up.png" alt="">
-                            <span>4% more</span>
-                            <span>in 2021</span>
+                    <div class="layer1">
+                        <div class="rocket-card">
+                            <div class="rocket-text">
+                                <div class="upper-text">
+                                    <h4>Built by developers</h4>
+                                    <h3>Soft UI Dashboard</h3>
+                                    <p>From colors, cards, typography to complex elements, </p>
+                                    <p>you will find the full documentation.</p>
+                                </div>
+                                <div class="lower-text">Read More <img src="images/arrow-right.png" alt=""></div>
+                            </div>
+                            <div class="rocket-img">
+                                <img src="images/rocket-white.png" alt="">
+                            </div>
                         </div>
-                        <div class="graph2">
-                        <canvas class="line-chart flex" id="line-chart"></canvas>
-                    </div>
-                    </div>
-                </div>
-                <div class="layer3">
-                    <div class="layer3-card1">
-                        <div class="layer3-card1-heading">
-                        <h3>Projects</h3>
-                        <span>done this month</span>
-                        <span id="percent">40%</span>
+                        <div class="image-card">
+                            <div class="background">
+                                <div class="upper">
+                                    <h2>Work with the rockets</h2>
+                                    <span>Wealth creations is an evolutionarily recent positive-sum game. It is all
+                                        about who take the opportunity first.</span>
+                                </div>
+                                <div class="lower-text">Read More <img src="images/arrow-right-white.png" alt=""></div>
+                            </div>
                         </div>
-                        <table>
-                            <tr>
-                                <th>COMPANIES</th>
-                                <th>MEMBERS</th>
-                                <th>BUDGET</th>
-                                <th>COMPLETION</th>
-                            </tr>
-                            <tr>
-                                <td> <img src="images/logo-shopify.png" alt=""> Soft UI Shopify Version</td>
-                                <td> <img src="images/members1.png" alt=""> </td>
-                                <td>$14,000</td>
-                                <td>60% <p><progress max="100" min="10" value="60"></progress></p></td>
-                            </tr>
-                            <tr>
-                                <td> <img src="images/logo-atlassian.png" alt=""> Progress track</td>
-                                <td> <img src="images/members2.png" alt=""> </td>
-                                <td>$3,000</td>
-                                <td>10% <p><progress max="100" min="10" value="10"></progress></p></td>
-                            </tr>
-                            <tr>
-                                <td> <img src="images/logo-slack.png" alt=""> Fix Platform Errors</td>
-                                <td> <img src="images/members3.png" alt=""> </td>
-                                <td>Not Set</td>
-                                <td>100% <p class="completed"><progress max="100" min="10" value="100"></progress></p></td>
-                            </tr>
-                            <tr>
-                                <td> <img src="images/logo-spotify.png" alt=""> Launch new Mobile App</td>
-                                <td> <img src="images/members4.png" alt=""> </td>
-                                <td>$20,600</td>
-                                <td>100% <p class="completed"><progress max="100" min="10" value="100"></progress></p></td>
-                            </tr>
-                            <tr>
-                                <td> <img src="images/logo-jira.png" alt=""> Add the New Landing Page</td>
-                                <td> <img src="images/members5.png" alt=""> </td>
-                                <td>$4,000</td>
-                                <td>80% <p><progress max="100" min="10" value="80"></progress></p></td>
-                            </tr>
-                            <tr>
-                                <td> <img src="images/logo-invision.png" alt=""> Redesign Online Store</td>
-                                <td> <img src="images/members6.png" alt=""> </td>
-                                <td>$2,000</td>
-                                <td>cancel <p class="cancel"><progress max="100" min="10" value="100"></progress></p></td>
-                            </tr>
-                        </table>
                     </div>
-                    <div class="layer3-card2">
-                        <h3>Orders History</h3>
-                        <img src="images/arrow-up.png" alt="">
-                        <span>24%</span>
-                        <span>this month</span>
+                    <div class="layer2">
+                        <div class="layer2-card1">
+                            <div class="graph1">
+                                <canvas class="bar-chart" id="bar-chart"></canvas>
+                            </div>
+                            <div class="graph1-content">
+                                <h3>Active Users</h3>
+                                <span id="bracket">(+23%) </span>
+                                <span id="remain">than last week</span>
+                                <div class="users">
+                                    <div class="icon">
+                                        <div class="flex">
+                                            <img src="images/icon1.png" alt="">
+                                            <span>Users</span>
+                                        </div>
+                                        <h1>3,6K</h1>
+                                        <p class="black-bar"><progress max="100" min="10" value="50"></progress></p>
+                                    </div>
+                                    <div class="icon">
+                                        <div class="flex">
+                                            <img src="images/icon2.png" alt="">
+                                            <span>Clicks</span>
+                                        </div>
+                                        <h1>2m</h1>
+                                        <p class="black-bar"><progress max="100" min="10" value="50"></progress></p>
+                                    </div>
+                                    <div class="icon">
+                                        <div class="flex">
+                                            <img src="images/icon3.png" alt="">
+                                            <span>Sales</span>
+                                        </div>
+                                        <h1>$772</h1>
+                                        <p class="black-bar"><progress max="100" min="10" value="50"></progress></p>
+                                    </div>
+                                    <div class="icon">
+                                        <div class="flex">
+                                            <img src="images/icon4.png" alt="">
+                                            <span>Items</span>
+                                        </div>
+                                        <h1>82</h1>
+                                        <p class="black-bar"><progress max="100" min="10" value="30"></progress></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layer2-card2">
+                            <div class="graph2-heading">
+                                <h3>Sales Overview</h3>
+                                <div class="label">
+                                    <img src="images/arrow-up.png" alt="">
+                                    <span class="per">4% more</span>
+                                    <span class="year">in 2021</span>
+                                </div>
+                            </div>
+                            <div class="graph2">
+                                <canvas class="line-chart flex" id="line-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer3">
+                        <div class="layer3-card1">
+                            <div class="layer3-card1-heading">
+                                <h3>Projects</h3>
+                                <span>done this month</span>
+                                <span id="percent">40%</span>
+                            </div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th id="companies">COMPANIES</th>
+                                        <th>MEMBERS</th>
+                                        <th>BUDGET</th>
+                                        <th>COMPLETION</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="companies"> <img src="images/logo-shopify.png" alt="">
+                                                <span>Soft UI Shopify Version </span></div>
+                                        </td>
+                                        <td class="members"> <img src="images/members1.png" alt=""> </td>
+                                        <td class="budget">$14,000</td>
+                                        <td class="completion">60% <p><progress max="100" min="10"
+                                                    value="60"></progress></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="companies"> <img src="images/logo-atlassian.png" alt="">
+                                                <span>Progress Track </span></div>
+                                        </td>
+                                        <td class="members"> <img src="images/members2.png" alt=""> </td>
+                                        <td class="budget">$3,000</td>
+                                        <td class="completion">10% <p><progress max="100" min="10"
+                                                    value="10"></progress></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="companies"> <img src="images/logo-slack.png" alt=""> <span>Fix
+                                                    Platform Errors </span></div>
+                                        </td>
+                                        <td class="members"> <img src="images/members3.png" alt=""> </td>
+                                        <td class="budget">Not Set</td>
+                                        <td class="completion">100% <p class="completed"><progress max="100" min="10"
+                                                    value="100"></progress></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="companies"> <img src="images/logo-spotify.png" alt="">
+                                                <span>Launch New Mobile App </span></div>
+                                        </td>
+                                        <td class="members"> <img src="images/members4.png" alt=""> </td>
+                                        <td class="budget">$20,600</td>
+                                        <td class="completion">100% <p class="completed"><progress max="100" min="10"
+                                                    value="100"></progress></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="companies"> <img src="images/logo-jira.png" alt=""> <span>Add
+                                                    the New Landing Page </span></div>
+                                        </td>
+                                        <td class="members"> <img src="images/members5.png" alt=""> </td>
+                                        <td class="budget">$4,000</td>
+                                        <td class="completion">80% <p><progress max="100" min="10"
+                                                    value="80"></progress></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="last">
+                                            <div class="companies"> <img src="images/logo-invision.png" alt="">
+                                                <span>Redesign Online Store </span></div>
+                                        </td>
+                                        <td id="last" class="members"> <img src="images/members6.png" alt=""> </td>
+                                        <td id="last" class="budget">$2,000</td>
+                                        <td id="last" class="completion uni">cancel <p class="cancel"><progress
+                                                    max="100" min="10" value="100"></progress></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="layer3-card2">
+                            <h3>Orders History</h3>
+                            <div class="label">
+                                <img src="images/arrow-up.png" alt="">
+                                <span class="per">24%</span>
+                                <span>this month</span>
+                            </div>
+                            <div class="history">
+                                <div class="line"></div>
+                                <div class="order">
+                                    <img src="images/bell2.png" alt="">
+                                    <div class="order-details">
+                                        <p class="order-number">$2,400 - Redesign Store</p>
+                                        <p class="time">09 JUN 7:20PM</p>
+                                    </div>
+                                </div>
+                                <div class="order">
+                                    <img src="images/html5.png" alt="">
+                                    <div class="order-details">
+                                        <p class="order-number">New order #3654323</p>
+                                        <p class="time">08 JUN 12:20PM</p>
+                                    </div>
+                                </div>
+                                <div class="order">
+                                    <img src="images/cart2.png" alt="">
+                                    <div class="order-details">
+                                        <p class="order-number">Company Server Payments</p>
+                                        <p class="time">04 JUN 3:10PM</p>
+                                    </div>
+                                </div>
+                                <div class="order">
+                                    <img src="images/credit-card.png" alt="">
+                                    <div class="order-details">
+                                        <p class="order-number">New card added for order #4826321</p>
+                                        <p class="time">02 JUN 2:45PM</p>
+                                    </div>
+                                </div>
+                                <div class="order">
+                                    <img src="images/access-key.png" alt="">
+                                    <div class="order-details">
+                                        <p class="order-number">Unlock folders for development</p>
+                                        <p class="time">18 MAY 1:30PM</p>
+                                    </div>
+                                </div>
+                                <div class="order">
+                                    <img src="images/money-coins2.png" alt="">
+                                    <div class="order-details">
+                                        <p class="order-number">New order #46282344</p>
+                                        <p class="time">14 MAY 3:30PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings">
+                                <img src="images/cog.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer"></div>
+            <div class="footer">
+                <div class="left-footer">
+                    <span>&#169; 2021, made with </span>
+                    <img src="images/Path.png" alt="">
+                    <span>by </span>
+                    <span class="bold">Creative Tim</span>
+                    <span>for a better web.</span>
+                </div>
+                <div class="right-footer">
+                    <a href="">Creative Tim</a>
+                    <a href="">About Us</a>
+                    <a href="">Blog</a>
+                    <a href="">License</a>
+                </div>
+            </div>
         </div>
     </div>
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

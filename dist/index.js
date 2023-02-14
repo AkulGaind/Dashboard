@@ -37,7 +37,7 @@ let lineChart = new Chart(myChart2, {
     ],
   },
   options: {
-    // maintainAspectRatio:false,
+    maintainAspectRatio:false,
     layout: {
       padding: {
         left: -15,
@@ -149,8 +149,8 @@ let barChart = new Chart(myChart, {
     ],
   },
   options: {
-    // maintainAspectRatio:false,
-    barThickness: 10,
+    maintainAspectRatio:false,
+    barThickness: 5,
     layout: {
       padding: {
         left: -25,
@@ -207,6 +207,10 @@ let barChart = new Chart(myChart, {
           display: true,
         },
         ticks: {
+          font: {
+            family: "Open Sans",
+            size: 14,
+          },
           color: '#FFF',
         },
       },
@@ -221,6 +225,10 @@ let barChart = new Chart(myChart, {
           maxTicksLimit: 6,
           stepSize: 200,
           beginAtZero: true,
+          font: {
+            family: "Open Sans",
+            size: 14,
+          },
           color: '#FFF',
         },
         grid: {
@@ -238,3 +246,22 @@ let barChart = new Chart(myChart, {
     },
   },
 });
+
+
+function onHover(i) {
+  i.setAttribute("class", "onhover");
+}
+
+function outHover(i) {
+  i.removeAttribute("class","notification");
+}
+
+function openLink() {
+  window.open('#', "_blank");
+}
+
+document.getElementsByClassName("notification")
+
+for (let i of Array.from(document.getElementsByClassName("tile"))) {
+  i.onclick = openLink;
+}

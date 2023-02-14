@@ -3,20 +3,29 @@
 @import './mixins';
 
 .contain {
-    margin: 15%;
+    margin: 5% 5% 5% 15%;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar {
     width: 16%;
+    display: flex;
+    flex-direction: column;
 }
 
 .heading {
     font-size: size(small);
     margin: 15% 3%;
 
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
     span {
         position: absolute;
-        left: 5%;
+        left: 4.7%;
         top: 6%;
         font-weight: weight(bold);
         font-size: size(small);
@@ -24,24 +33,30 @@
 }
 
 #first-tile {
-    background-color: $white;
     .tile-img {
         background-color: #CB0C9F;
         @include tileimg;
         @include flexCenter;
     }
+}
+
+.tile:hover {
+    background-color: $white;
+    cursor: pointer;
+
     span {
         color: #141414;
         font-weight: weight(bold);
     }
 }
 
+
 .tile {
     display: flex;
     padding: 4%;
     border-radius: 8px;
     margin: 4.5% 0;
-    
+
     span {
         font-size: size(small);
         padding: 8px 12px;
@@ -61,4 +76,70 @@
     color: #67748E;
     font-weight: weight(vbold);
     font-size: size(small);
+}
+
+.contain2 {
+    margin: 5% 7% 5% 13%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+
+    .box {
+        position: absolute;
+        top: 25%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 16px;
+        min-height: 180px;
+        padding: 16px;
+        color: $white;
+        background: (linear-gradient(135deg, rgba(168, 184, 216, 0.5) 0%, rgba(98, 117, 148, 0.5) 100%, ), url('../../dist/images/white-curved.png'));
+        justify-content: space-between;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+
+        .content {
+            color: $white;
+
+            h4 {
+                font-size: size(medium);
+                font-weight: weight(medium);
+                line-height: 19px;
+                padding-bottom: 4px;
+            }
+
+            h5 {
+                font-size: size(small);
+                font-weight: weight(regular);
+            }
+        }
+
+        .diamond {
+            margin-bottom: 2%;
+            background-color: $white;
+            display: flex;
+            justify-content: center;
+            height: 32px;
+            width: 32px;
+            box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.07);
+            border-radius: 6px;
+        }
+
+        button {
+
+            background-color: $white;
+            cursor: pointer;
+            font-size: size(vsmall);
+            color: $text-color;
+            font-weight: weight(vbold);
+            border: 0;
+            padding: 10px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 7px -1px rgba(0, 0, 0, 0.11), 0px 2px 4px -1px rgba(0, 0, 0, 0.07);
+            border-radius: 8px;
+        }
+    }
+
 }
